@@ -1,8 +1,7 @@
-# Zen Browser for Nix
+# Zen Browser (Twilight) for Nix
 
-This is a flake for the Zen browser. Originally forked from
-[MarceColl/zen-browser-flake](https://github.com/MarceColl/zen-browser-flake),
-but heavily modified. Automatically updates daily.
+This is a flake for the twilight edition of Zen browser. Originally forked from
+[MarceColl/zen-browser-flake](https://github.com/MarceColl/zen-browser-flake), heavily modified in [youwen5/zen-browser-flake](https://github.com/youwen5/zen-browser-flake), and finally converted to track the twilight edition of Zen browser. Automatically updates daily.
 
 Also actively maintained, unlike the upstream.
 
@@ -19,7 +18,7 @@ To use, add it to the relevant NixOS configuration flake inputs:
 ```nix
 inputs = {
   # ...
-  zen-browser.url = "github:youwen5/zen-browser-flake";
+  zen-browser.url = "github:quantum9innovation/zen-browser-twilight-flake";
 
   # optional, but recommended so it shares system libraries, and improves startup time
   zen-browser.inputs.nixpkgs.follows = "nixpkgs";
@@ -60,7 +59,7 @@ A binary called `zen` is provided.
 
 You can also install it using the CLI imperatively:
 
-`nix profile install github:youwen5/zen-browser`
+`nix profile install github:quantum9innovation/zen-browser-twilight-flake`
 
 ## Caveats
 
