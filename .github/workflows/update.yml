@@ -34,4 +34,5 @@ jobs:
 
           nix flake update --commit-lock-file
 
-          git push origin upstream/master:master
+          git remote add index https://github.com/quantum9innovation/zen-browser-twilight-flake
+          git push index origin
