@@ -34,4 +34,4 @@ jobs:
 
           nix flake update --commit-lock-file
 
-          git push
+          git push origin upstream/master:master
